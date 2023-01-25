@@ -51,14 +51,4 @@ footer {
   text-align: center;
 }
 
-/* Crypto list styles */
-#crypto-list {
-  /* Gradient background */
-  color: white;
-  padding: 20px;
-  margin: 10px;
-  list-style-type: none;
-  /* Add border */
-  border: 3px dotted #283593;
 
-} 
