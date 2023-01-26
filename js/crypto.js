@@ -45,11 +45,17 @@ let cryptoContainer = document.getElementById("crypto-container");
         },
         options: {
           scales: {
-            y: {
-              beginAtZero: true
-            }
+              x: {
+                  type: 'time',
+                  time: {
+                      unit: 'day'
+                  }
+              },
+              y: {
+                beginAtZero: true
+              }
           }
-        }
+      }      
       });
     });
 });
