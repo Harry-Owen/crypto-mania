@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SIGN UP</title>
+<title>Cryptomania</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="icon" type="image/png" href="img/favicon.ico"/> 
 </head>
 <body>
 <img src="img/background-login.svg" id="background-svg" alt="Background">
