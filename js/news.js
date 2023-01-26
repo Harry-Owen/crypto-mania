@@ -1,27 +1,25 @@
-const apiKey = '033f9b581c434ddeae8b2bbba090edae';
-const endpoint = `https://newsapi.org/v2/everything?q=cryptocurrency&sortBy=publishedAt&apiKey=${apiKey}`;
-
+//get the news container
 const newsContainer = document.getElementById('news-container');
 
-fetch(endpoint)
+//fetch the json data
+fetch('cryptoNews.json')
   .then(res => res.json())
   .then(data => {
-    const articles = data.articles;
     let newsHTML = '';
-
-    articles.forEach(article => {
+    //loop through the data and create the HTML for each item
+    data.forEach(item => {
       newsHTML += `
         <div class="news-item">
-          <a href="${article.url}" target="_blank">
-            <h2>${article.title}</h2>
-            <img src="${article.urlToImage}" alt="Article Image">
-            <p>${article.description}</p>
-            <p>Published on ${article.publishedAt}</p>
+          <a href="${item.url}" target="_blank">
+            <h2>${item.title}</h2>
+            <img src="${item.image}" alt="Article Image">
+            <p>${item.description}</p>
+            <p>Published on ${item.date}</p>
           </a>
         </div>
       `;
     });
-
-    newsContainer.innerHTML = news.html;
+    //set the innerHTML of the container to the generated HTML
+    newsContainer.innerHTML = newsHTML;
   })
   .catch(error => console.log(error));

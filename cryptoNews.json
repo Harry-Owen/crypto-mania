@@ -1,0 +1,18 @@
+{
+  "articles": [
+      {
+          "title": "First crypto news article",
+          "url": "https://www.example.com/first-article",
+          "image": "https://www.example.com/first-article-image.jpg",
+          "description": "This is the first crypto news article",
+          "publishedAt": "2022-01-01"
+      },
+      {
+          "title": "Second crypto news article",
+          "url": "https://www.example.com/second-article",
+          "image": "https://www.example.com/second-article-image.jpg",
+          "description": "This is the second crypto news article",
+          "publishedAt": "2022-01-02"
+      }
+  ]
+}
